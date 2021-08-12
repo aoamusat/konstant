@@ -13897,6 +13897,16 @@ function Example(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_4__.Disclosure, {
     as: "nav",
     className: "",
+    style: {
+      position: "fixed",
+      top: 0,
+      bottom: "auto",
+      right: 0,
+      left: 0,
+      width: "100%",
+      zIndex: 9999,
+      backgroundColor: "white"
+    },
     children: function children(_ref) {
       var open = _ref.open;
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
@@ -13941,7 +13951,7 @@ function Example(props) {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                 className: "hidden sm:block sm:ml-6",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-                  className: "flex space-x-4",
+                  className: "flex space-x-7",
                   children: navigation.map(function (item) {
                     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
                       href: item.href,

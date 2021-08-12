@@ -61,7 +61,20 @@ function classNames(...classes) {
 export default function Example(props) {
     const { auth, navigation } = props;
     return (
-        <Disclosure as="nav" className="">
+        <Disclosure
+            as="nav"
+            className=""
+            style={{
+                position: "fixed",
+                top: 0,
+                bottom: "auto",
+                right: 0,
+                left: 0,
+                width: "100%",
+                zIndex: 9999,
+                backgroundColor: "white",
+            }}
+        >
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
