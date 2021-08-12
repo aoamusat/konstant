@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::middleware(['api'])->group(function () {
-    Route::post('/login', "APIController@login");
+    Route::post('/login', "App\Http\Controllers\APIController@login");
 });
